@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url('/assets/wallhaven-poy3wp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
+}
+
+/* --- Cabeçalhos usando Flexbox para alinhar lado a lado --- */
+.cabecalho, .game-nav {
+    display: flex;
+    justify-content: space-between; /* Espalha os itens: esquerda, centro, direita */
+    align-items: center;            /* Centraliza verticalmente */
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.links, .game-tabs {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Espaço entre os links */
+}
+
+/* --- Botões --- */
+.botao {
+    background-color: #0070cc;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: none;
+}
+
+.pequeno, .grande {
+    background-color: #d13611; /* Cor laranja avermelhada */
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+}
+
+/* --- Seção Principal (Hero com Imagem de Fundo) --- */
+.jogo {
+    /* Substitua a URL pela sua imagem */
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%), url('/assets/wallhaven-poy3wp.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Ocupa 80% da altura da tela */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding-left: 50px;
+    color: white;
+}
+
+/* Espaçamento interno do conteúdo */
+.nomejogo {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre título, estrelas, botões */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
